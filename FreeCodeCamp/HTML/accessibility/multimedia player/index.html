@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
+<body>
+
+  <h1>My Multimedia Player</h1>
+
+  <section>
+    <h2>Now Playing: Sailing Away</h2>
+
+    <audio controls aria-label="Audio player for Sailing Away">
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+        type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Featured Video</h2>
+
+    <video controls width="600" aria-label="Video explaining the map method">
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+        type="video/mp4">
+
+      <track
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English">
+
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <section>
+    <h2>Transcript</h2>
+
+    <p>
+      This video explains JavaScript's <code>map()</code> method, showing how it
+      creates a new array by applying a function to every element of an existing
+      array. Examples demonstrate how <code>map()</code> is commonly used to
+      transform data without modifying the original array.
+    </p>
+  </section>
+
+</body>
+</html>
