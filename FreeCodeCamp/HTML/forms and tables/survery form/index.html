@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a quick survey form for our website</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="e.g., John doe">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="email@email.com">
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" min="3" max="80" placeholder="18">
+      <label for="dropdown">Your Planet?:</label>
+      <select id="dropdown">
+        <option selected>Earth</option>
+        <option>Other</option>
+      </select>
+      <label>Your Gender:</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+      <p>availabilty:</p>
+      <label for="9am">9 AM:</label>
+      <input id="9am"type="checkbox" value="9">
+      <label for="12am">12 AM:</label>
+      <input id="12am"type="checkbox" value="12">
+      <label for="3am">3 AM:</label>
+      <input id="3am"type="checkbox" value="3">
+      <label for="comment">Comments:</label>
+      <textarea></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
