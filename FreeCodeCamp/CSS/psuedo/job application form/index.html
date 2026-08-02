@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="styles.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form>
+            <label for="name">Enter your Name: </label>
+            <input type="text" id="name" name="name">
+            <label for="email">Enter email: </label>
+            <input type="email" id="email" name="email">
+            <label for="position">Position: </label>
+            <select name="position" id="position">
+                <option default>Select a option</option>
+                <option value="junior-lecturer">Junior lecturer</option>
+                <option value="lab-assistant">Lab Assistant</option>
+                <option value="senior-lecturer">Senior Lecturer</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <input
+                    type="radio"
+                    name="availability"
+                    id="sem"
+                    value="sem"
+                    checked
+                >
+                <label for="sem">1 Semester</label>
+                <input
+                    type="radio"
+                    name="availability"
+                    id="year"
+                    value="year"
+                >
+                <label for="year">1 Year</label>
+                <input
+                    type="radio"
+                    name="availability"
+                    id="more"
+                    value="more"
+                >
+                <label for="more">More</label>
+            </fieldset>
+            <label for="message">Why do you want this job?</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>

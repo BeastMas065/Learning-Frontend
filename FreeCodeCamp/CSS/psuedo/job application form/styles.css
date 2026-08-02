@@ -1,0 +1,64 @@
+* {
+  font-family: arial, sans serif;
+}
+
+h1 {
+  font-size:2.5rem;
+}
+
+.container {
+  background-color: brown;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  border: 3px solid black;
+  box-shadow:5px 10px 10px; 
+  width:75%;
+  max-width:600px;
+}
+
+.container:hover{
+  background-color:rgb(162, 29, 29);
+}
+
+.container input:not([type="radio"]) {
+  width:90%;
+}
+fieldset {
+  padding:10px;
+}
+
+input:focus, textarea:focus {
+  border-color:yellow;
+  outline:none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color:red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color:green;
+}
+
+button:hover {
+  background-color:rgb(255, 115, 0);
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color:green;
+  background-color:yellow;
+  box-shadow: 2px 1px 10px gray;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: blue;
+}
+
+input:first-of-type {
+  margin:20px 0;
+}
