@@ -1,0 +1,45 @@
+.form-container {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    max-width: 500px;
+    min-height: 300px;
+    margin: 2em auto;
+    font-family: impact;
+    text-align: center;
+}
+
+h1 {
+    margin: auto;
+}
+
+label {
+    margin: 1em;
+    color:brown;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 1em 0 1em 0.6em;
+    margin-bottom: 15px;
+    display:block;
+    margin: 0 auto 15px auto;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+input {
+    height: 0.5rem;
+}
+
+button[type="submit"] {
+    background-color: blueviolet;
+    font-size: 1.1rem;
+    margin:auto;
+    color: pink;
+}
+
+button[type="submit"]:hover {
+    background-color: pink;
+    color: blueviolet;
+}
