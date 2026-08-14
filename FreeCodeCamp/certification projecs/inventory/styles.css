@@ -1,0 +1,77 @@
+*{
+    font-family: monospace;
+    text-align: center;
+}
+
+tbody {
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(green 85%, rgba(0, 128, 0, 0.315) 100%);
+}
+
+tr[class="to-read"]{
+    background-image: linear-gradient(yellow 85%, rgba(255, 255, 0, 0.452) 100%);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(blue 85%, rgba(0, 0, 255, 0.479) 100%);
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]{
+    border: 2px solid pink;
+    background-image: linear-gradient(red 85%, rgba(255, 0, 0, 0.5) 100%);
+}
+tr[class="read"] span[class="status"]{
+    border: 2px solid pink;
+    background-image: linear-gradient(rgb(0, 17, 255) 85%, rgba(0, 4, 255, 0.5) 100%);
+}
+tr[class="in-progress"] span[class="status"]{
+    border: 2px solid pink;
+    background-image: linear-gradient(rgb(0, 255, 191) 85%, rgba(0, 255, 221, 0.5) 100%);
+}
+
+span[class="status"],
+span[class^="rate"] {
+    height: 40px;
+    width: 10vw;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+span[class^="rate"] > span {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: paleturquoise;
+    display: inline-block;
+}
+
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(darkblue, blue);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(darkblue, blue);
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(darkblue, blue);
+}
