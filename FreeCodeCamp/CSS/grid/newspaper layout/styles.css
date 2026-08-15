@@ -1,0 +1,78 @@
+html {
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.newspaper-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto repeat(3, min-content);
+    grid-template-areas: "title title title"
+                "feature-article feature-article cover-image"
+                "secondary-article secondary-article cover-image"
+                "small-article1 small-article2 small-article3";
+    gap: 10px;
+}
+
+.title {
+    grid-area:title;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+.feature-article {
+    grid-area:feature-article;
+}
+.secondary-article {
+    grid-area:secondary-article;
+}
+.cover-image {
+    grid-area:cover-image;
+}
+
+.cover-image img {
+    min-width: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+}
+
+.small-article1 {
+    grid-area:small-article1;
+}
+.small-article2 {
+    grid-area:small-article2;
+}
+.small-article3 {
+    grid-area:small-article3;
+}
+
+
+@media screen and (max-width: 640px) {
+    .newspaper-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(5, min-content);
+    grid-template-areas: "title title"
+                "feature-article feature-article"
+                "cover-image cover-image"
+                "secondary-article secondary-article"
+                "small-article1 small-article2"
+                "small-article3 small-article3";
+    gap: 10px;
+}
+}
