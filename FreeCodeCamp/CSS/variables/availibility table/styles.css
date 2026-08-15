@@ -1,0 +1,96 @@
+:root {
+    --color0: rgba(0, 128, 0, 1);
+    --color1: rgba(0, 128, 0, 0.8);
+    --color2: rgba(0, 128, 0, 0.6);
+    --color3: rgba(0, 128, 0, 0.4);
+    --color4: rgba(0, 128, 0, 0.2);
+    --color5: rgba(0, 128, 0, 0.15);
+    --solid-border: 2px solid black;
+    --dashed-border: 2px dashed black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    height: 20vh;
+    margin:  20px;
+    background-color:blanchedalmond;
+    border: var(--solid-border);
+}
+
+caption {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+th{
+    width: 10%;
+    height: 4vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sharp {
+    border-bottom: var(--solid-border);
+}
+.half {
+    border-bottom: var(--dashed-border);
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+.available-1 {
+    background-color: var(--color1);
+}
+.available-2 {
+    background-color: var(--color2);
+}
+.available-3 {
+    background-color: var(--color3);
+}
+.available-4 {
+    background-color: var(--color4);
+}
+.available-5 {
+    background-color: var(--color5);
+}
+
+#legend {
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+#legend-gradient {
+    width: 10vw;
+    height: 20px;
+    background: linear-gradient(
+        90deg,
+        var(--color0) 0%,
+        var(--color0) 17%,
+        var(--color1) 17%,
+        var(--color1) 34%,
+        var(--color2) 34%,
+        var(--color2) 51%,
+        var(--color3) 51%,
+        var(--color3) 68%,
+        var(--color4) 68%,
+        var(--color4) 85%,
+        var(--color5) 85%,
+        var(--color5) 100%
+    );
+}
