@@ -1,0 +1,1 @@
+const convertCtoF = num => num * (9/5) + 32;
