@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="weather-display" class="card">
+      <h1 id="location">N/A</h1>
+
+      <div class="summary">
+        <p id="main-temperature">N/A</p>
+        <div class="condition">
+          <img id="weather-icon" src="" alt="Weather icon" />
+          <p id="weather-main">N/A</p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="stats">
+          <p id="humidity">N/A</p>
+          <p id="feels-like">N/A</p>
+          <p id="wind">N/A</p>
+          <p id="wind-gust">N/A</p>
+        </div>
+
+        <div class="compass" aria-label="Wind direction">
+          <span class="tick tick-n"></span>
+          <span class="tick tick-e"></span>
+          <span class="tick tick-s"></span>
+          <span class="tick tick-w"></span>
+          <div id="wind-arrow" class="arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <label for="city-select">Weather for:</label>
+      <select id="city-select">
+        <option value=""></option>
+        <option value="new york">New York</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="london">London</option>
+      </select>
+      <button id="get-weather-btn">Get Weather</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
